@@ -1,5 +1,4 @@
 header, footer, #left, #right{
-    padding : 20px 20px 20px 20px;
   text-align: center;
 }
 header{
@@ -11,16 +10,27 @@ header{
   
 }
 
-#left{
+section{
+    width: 100%;
     position: relative;
-    width: 50%;
-    display: inline;
-    margin-left: 50px;
+}
+
+#left{
+    box-sizing:border-box;
+    max-width: 50%;
+    display:inline;
+    background-color: blue;
+    /* padding : 20px 20px 20px 20px; */
+
 }
 
 #right{
-    position: relative;
-    width: 50%;
+    box-sizing:border-box;
+    max-width: 50%;
     display: inline;
-    margin-right: 50px;
+    float: right;
+    text-align: left;
+    font-size: 20px;
+    background-color: blueviolet;
+    /* padding : 20px 20px 20px 20px; */
 }
